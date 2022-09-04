@@ -19,14 +19,10 @@
  SCRIPT ChumoGH 4.8x ------ |  11-04-22          
  SCRIPT LATAM 1.1G -------- |  04-04-22          
  
- ❗ Cualquier error avisar en el Grupo TG          
+ ❗ Cualquier error avisar en el Grupo Telegram         
 ------------------------------------------------------------------       
 
-GRUPO DE TELEGRAM: https://t.me/+HyiGQFE3BhZhZmMx
+GRUPO DE TELEGRAM: https://t.me/aricoto
 
 ------------------------------------------------------------------
-😋 SE AGRADECE CUALQUIER DONACION       
-BTC
-```3M8zaTvkVYkz87jeDmpAMBCiQsRrKff3qk```    
-LTC
-```MA8nZyyQbMY3MRhZ7Qka6wEMjkGR6zjha1```   
+
