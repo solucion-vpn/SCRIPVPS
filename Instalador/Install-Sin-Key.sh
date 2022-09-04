@@ -155,7 +155,7 @@ dependencias() {
 }
 
 post_reboot() {
-  echo 'wget -O /root/install.sh "https://raw.githubusercontent.com/NetVPS/VPS-MX_Oficial/master/Instalador/Install-Sin-Key.sh"; clear; sleep 2; chmod +x /root/install.sh; /root/install.sh --continue' >>/root/.bashrc
+  echo 'wget -O /root/install.sh "https://raw.githubusercontent.com/solucion-vpn/SCRIPVPS/master/Instalador/Install-Sin-Key.sh"; clear; sleep 2; chmod +x /root/install.sh; /root/install.sh --continue' >>/root/.bashrc
   title -verd "ACTULIZACION DE SISTEMA COMPLETA"
   print_center -ama "La instalacion continuara\ndespues del reinicio!!!"
   msg -bar
@@ -242,7 +242,7 @@ install_oficial() {
   clear && clear
   mkdir /etc/VPS-MX >/dev/null 2>&1
   cd /etc
-  wget https://raw.githubusercontent.com/NetVPS/VPS-MX_Oficial/master/SCRIPT-v8.4g%20Oficial/VPS-MX.tar.xz >/dev/null 2>&1
+  wget https://raw.githubusercontent.com/solucion-vpn/SCRIPVPS/master/SCRIPT-v8.4g%20Oficial/VPS-MX.tar.xz >/dev/null 2>&1
   tar -xf VPS-MX.tar.xz >/dev/null 2>&1
   chmod +x VPS-MX.tar.xz >/dev/null 2>&1
   rm -rf VPS-MX.tar.xz
@@ -271,7 +271,7 @@ install_oficial() {
   [[ ! -d /etc/VPS-MX/Slow/install ]] && mkdir /etc/VPS-MX/Slow/install
   [[ ! -d /etc/VPS-MX/Slow/Key ]] && mkdir /etc/VPS-MX/Slow/Key
   touch /usr/share/lognull &>/dev/null
-  wget -O /bin/resetsshdrop https://raw.githubusercontent.com/NetVPS/VPS-MX_Oficial/master/LINKS-LIBRERIAS/resetsshdrop &>/dev/null
+  wget -O /bin/resetsshdrop https://raw.githubusercontent.com/solucion-vpn/SCRIPVPS/master/LINKS-LIBRERIAS/resetsshdrop &>/dev/null
   chmod +x /bin/resetsshdrop
   grep -v "^PasswordAuthentication" /etc/ssh/sshd_config >/tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
   echo "PasswordAuthentication yes" -e "\e[1;92m             >> INSTALACION COMPLETADA <<" >>/etc/ssh/sshd_configecho && msg bar2
@@ -279,7 +279,7 @@ install_oficial() {
   rm -rf /etc/versin_script &>/dev/null
   v1=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/VPS-MX_Oficial/master/SCRIPT-v8.4g%20Oficial/Version")
   echo "$v1" >/etc/versin_script
-  wget -O /etc/versin_script_new https://raw.githubusercontent.com/NetVPS/VPS-MX_Oficial/master/SCRIPT-v8.5x%20Mod/Version &>/dev/null
+  wget -O /etc/versin_script_new https://raw.githubusercontent.com/solucion-vpn/SCRIPVPS/master/SCRIPT-v8.5x%20Mod/Version &>/dev/null
   echo '#!/bin/sh -e' >/etc/rc.local
   sudo chmod +x /etc/rc.local
   echo "sudo resetsshdrop" >>/etc/rc.local
@@ -292,7 +292,7 @@ install_oficial() {
   echo 'echo -e "\t\033[91m  \ \ / /| |_) \___ \ _____| |\/| |\  /  " ' >>.bashrc
   echo 'echo -e "\t\033[91m   \ V / |  __/ ___) |_____| |  | |/  \  " ' >>.bashrc
   echo 'echo -e "\t\033[91m    \_/  |_|   |____/      |_|  |_/_/\_\ " ' >>.bashrc
-  echo 'wget -O /etc/versin_script_new https://raw.githubusercontent.com/NetVPS/VPS-MX_Oficial/master/SCRIPT-v8.4g%20Oficial/Version &>/dev/null' >>.bashrc
+  echo 'wget -O /etc/versin_script_new https://raw.githubusercontent.com/solucion-vpn/SCRIPVPS/master/SCRIPT-v8.4g%20Oficial/Version &>/dev/null' >>.bashrc
   echo 'echo "" ' >>.bashrc
   echo 'mess1="$(less /etc/VPS-MX/message.txt)" ' >>.bashrc
   echo 'echo "" ' >>.bashrc
@@ -323,7 +323,7 @@ install_mod() {
   clear && clear
   mkdir /etc/VPS-MX >/dev/null 2>&1
   cd /etc
-  wget https://raw.githubusercontent.com/NetVPS/VPS-MX_Oficial/master/SCRIPT-v8.5x%20Mod/VPS-MX.tar.xz >/dev/null 2>&1
+  wget https://raw.githubusercontent.com/solucion-vpn/SCRIPVPS/master/SCRIPT-v8.5x%20Mod/VPS-MX.tar.xz >/dev/null 2>&1
   tar -xf VPS-MX.tar.xz >/dev/null 2>&1
   chmod +x VPS-MX.tar.xz >/dev/null 2>&1
   rm -rf VPS-MX.tar.xz
@@ -352,15 +352,15 @@ install_mod() {
   [[ ! -d /etc/VPS-MX/Slow/install ]] && mkdir /etc/VPS-MX/Slow/install
   [[ ! -d /etc/VPS-MX/Slow/Key ]] && mkdir /etc/VPS-MX/Slow/Key
   touch /usr/share/lognull &>/dev/null
-  wget -O /bin/resetsshdrop https://raw.githubusercontent.com/NetVPS/VPS-MX_Oficial/master/LINKS-LIBRERIAS/resetsshdrop &>/dev/null
+  wget -O /bin/resetsshdrop https://raw.githubusercontent.com/solucion-vpn/SCRIPVPS/master/LINKS-LIBRERIAS/resetsshdrop &>/dev/null
   chmod +x /bin/resetsshdrop
   grep -v "^PasswordAuthentication" /etc/ssh/sshd_config >/tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
   echo "PasswordAuthentication yes" >>/etc/ssh/sshd_config
   rm -rf /usr/local/lib/systemubu1 &>/dev/null
   rm -rf /etc/versin_script &>/dev/null
-  v1=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/VPS-MX_Oficial/master/SCRIPT-v8.5x%20Mod/Version")
+  v1=$(curl -sSL "https://raw.githubusercontent.com/solucion-vpn/SCRIPVPS/master/SCRIPT-v8.5x%20Mod/Version")
   echo "$v1" >/etc/versin_script
-  wget -O /etc/versin_script_new https://raw.githubusercontent.com/NetVPS/VPS-MX_Oficial/master/SCRIPT-v8.5x%20Mod/Version &>/dev/null
+  wget -O /etc/versin_script_new https://raw.githubusercontent.com/solucion-vpn/SCRIPVPS/master/SCRIPT-v8.5x%20Mod/Version &>/dev/null
   echo '#!/bin/sh -e' >/etc/rc.local
   sudo chmod +x /etc/rc.local
   echo "sudo resetsshdrop" >>/etc/rc.local
@@ -373,7 +373,7 @@ install_mod() {
   echo 'echo -e "\t\033[91m  \ \ / /| |_) \___ \ _____| |\/| |\  /  " ' >>.bashrc
   echo 'echo -e "\t\033[91m   \ V / |  __/ ___) |_____| |  | |/  \  " ' >>.bashrc
   echo 'echo -e "\t\033[91m    \_/  |_|   |____/      |_|  |_/_/\_\ " ' >>.bashrc
-  echo 'wget -O /etc/versin_script_new https://raw.githubusercontent.com/NetVPS/VPS-MX_Oficial/master/SCRIPT-v8.5x%20Mod/Version &>/dev/null' >>.bashrc
+  echo 'wget -O /etc/versin_script_new https://raw.githubusercontent.com/solucion-vpn/SCRIPVPS/master/SCRIPT-v8.5x%20Mod/Version &>/dev/null' >>.bashrc
   echo 'echo "" ' >>.bashrc
   echo 'mess1="$(less /etc/VPS-MX/message.txt)" ' >>.bashrc
   echo 'echo "" ' >>.bashrc
